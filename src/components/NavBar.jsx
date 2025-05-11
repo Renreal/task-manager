@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/NavBarStyle.css";
 import searchIcon from "../assets/search.svg"
 import bellIcon from "../assets/notif-bell.svg"
-import reactIcon from "../assets/react.svg"
+import kyle from "../assets/images/kyle.jpg"
 import dropIcon from "../assets/dropdown.svg"
 export default function NavBar() {
   return (
@@ -17,7 +17,7 @@ export default function NavBar() {
           </div>
           <img src={bellIcon} alt="Notifications" className="notif-icon" />
           <div className="nav-profile">
-              <img src={reactIcon} alt="Profile" />
+              <img classname="profile-pic" src={kyle} alt="Profile" />
               <span className="profile-name">Kyle</span>
               <img src={dropIcon} alt="dropdown" className="dropdown-icon" />
           </div>
