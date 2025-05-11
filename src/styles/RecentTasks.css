@@ -1,0 +1,53 @@
+.recent-tasks-table {
+  margin: 20px;
+  margin-right: 40px;
+}
+.recent-tasks-table .Assignee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recent-tasks-table .Assignee img {
+  width: 24px;
+  border-radius: 18px;
+  margin-right: 6px;
+}
+.Recent-Tasks-Card {
+  color: black;
+}
+.table-title {
+  display: flex;
+  justify-content: space-between;
+}
+.table-title span {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000bf;
+}
+.table-title a {
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000bf;
+}
+
+.recent-tasks-table .MuiTableCell-head {
+  color: #00000080;
+  font-weight: 400;
+  font-size: 14px;
+  background: none;
+}
+
+.recent-tasks-table-container {
+  border-radius: 5px;
+  box-shadow: 00px 4.75px 4.75px 0px #00000040;
+  padding: 13px;
+  background-color: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  .recent-tasks-table-container {
+    width: 1140px;
+    height: 315px;
+  }
+}
