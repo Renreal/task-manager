@@ -9,8 +9,8 @@ function SideBar() {
         <div className="sidebar">
             <div className="sidebar-header">
                 <img className="sidebar-logo" src={systemLogo} alt="System Logo" />
-                <div className="sidebar-title">
-                    <span className="sidebar-text"><span className="blue-task">TASK</span> TRACKER</span>
+                <div className="sidebar-text">
+                    <span className="blue-task">TASK</span> <span>TRACKER</span>
                 </div>
             </div>
 

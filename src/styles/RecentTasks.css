@@ -2,12 +2,45 @@
   margin: 20px;
   margin-right: 40px;
 }
-.recent-tasks-table .Assignee {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.recent-tasks-table img, span{
+  vertical-align: middle;
 }
-.recent-tasks-table .Assignee img {
+
+.status span{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 8px;
+  background-color: #64DA6980;
+  display: inline-grid;
+  align-items: center;
+  border-radius: 10px;
+  border: 0.5px solid #64DA69;
+  height: 18px;
+  width: 60px;
+}
+.status.in-progress span{
+  background-color: rgba(246, 145, 52, 0.5);
+  border: 0.5px solid rgba(246, 145, 52, 1);
+}
+.status.pending span{
+  background-color: rgba(51, 173, 209, 0.5);
+  border: 0.5px solid rgba(51, 173, 209, 1);
+  display: inline-grid;
+  padding: 0px;
+  align-items: center;
+}
+.status.pending, .view-action{
+  vertical-align: middle;
+} 
+
+
+.view-action span{
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
+.recent-tasks-table .table-body img {
   width: 24px;
   border-radius: 18px;
   margin-right: 6px;
