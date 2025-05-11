@@ -1,0 +1,83 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #21293C;
+    color: white;
+    height: 75px;
+    width: 100%;
+    margin: 0;
+    /* Reset any left offset */
+}
+
+.navbar-greeting{
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar {
+    position: relative;
+}
+.nav-search {
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    
+    
+}
+
+.search-icon {
+    width: 20;
+    height: 20;
+    top: 11px;
+    left: 8px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+}
+
+.nav-profile img {
+    width: 36px;
+    top: 20px;
+    left: 1228px;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
+.profile-name {
+    font-size:  0.875em;
+}
+
+.dropdown-icon{
+    width: 8.33px;
+    height: 4.16px;
+    top: 8.33px;
+    left: 5.83px;
+    cursor: pointer;
+}
+
+.notif-icon {
+    cursor: pointer;
+}
