@@ -40,7 +40,7 @@ export default function Admin() {
               </div>
             </div>
 
-            <RecentTasks />
+            <RecentTasks TableTitle={"Recent Tasks"}/>
           </div>
         </div>
       </div>

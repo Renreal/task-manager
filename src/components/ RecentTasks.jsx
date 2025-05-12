@@ -5,11 +5,10 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import "../styles/RecentTasks.css";
 import kyle from "../assets/images/kyle.jpg";
 import marien from "../assets/images/marien.jpg";
-export default function RecentTasks() {
+export default function RecentTasks({TableTitle}) {
   return (
     <div className="recent-tasks-table">
       <TableContainer
@@ -32,7 +31,7 @@ export default function RecentTasks() {
                 sx={{ borderBottom: "none", padding: "3px" }}
               >
                 <div className="table-title">
-                  <span>Recent Tasks</span>
+                  <span>{TableTitle}</span>
                   <a>View All</a>
                 </div>
               </TableCell>
