@@ -6,7 +6,7 @@ import TaskCard from "../components/TaskCard";
 import pendingIcon from "../assets/pending-icon.svg";
 import progressIcon from "../assets/progress-icon.svg";
 import completedIcon from "../assets/completed-icon.svg";
-import RecentTasks from "../components/ RecentTasks";
+import RecentTasksTable from "../components/RecentTasksTable";
 
 export default function Admin() {
   return (
@@ -40,7 +40,7 @@ export default function Admin() {
               </div>
             </div>
 
-            <RecentTasks TableTitle={"Recent Tasks"}/>
+            <RecentTasksTable/>
           </div>
         </div>
       </div>
