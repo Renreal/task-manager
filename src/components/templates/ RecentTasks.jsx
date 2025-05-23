@@ -72,13 +72,13 @@ export default function RecentTasks({ tableTitle, tasks = [], onViewClick }) {
                 <TableCell align="center">{task.title}</TableCell>
 
                 <TableCell align="center" className="Assignee">
-                  <img src={task.assignerImage} alt={task.assigner} />
-                  <span>{task.assigner}</span>
+                  <img src={task.assigneeImage} alt={task.assignee} />
+                  <span>{task.assignee}</span>
                 </TableCell>
 
                 <TableCell align="center">
-                  <img src={task.assigneeImage} alt={task.assignee} />
-                  <span>{task.assignee}</span>
+                  <img src={task.assignerImage} alt={task.assigner} />
+                  <span>{task.assigner}</span>
                 </TableCell>
 
                 <TableCell align="center">{task.date}</TableCell>

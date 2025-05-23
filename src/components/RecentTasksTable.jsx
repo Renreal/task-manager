@@ -6,21 +6,37 @@ import marien from "../assets/images/marien.jpg";
 const sampleTasks = [
     {
       title: "Buy Fruits",
-      assigner: "Kyle Atuel",
-      assignerImage: kyle,
-      assignee: "Marien Bernasor",
-      assigneeImage: marien,
-      date: "22 Mar 2024 8:15am",
-      status: "Completed",
-    },
-    {
-      title: "Team Meeting",
       assigner: "Marien Bernasor",
       assignerImage: marien,
       assignee: "Kyle Atuel",
       assigneeImage: kyle,
+      date: "22 Mar 2024 8:15am",
+      status: "Completed",
+    }, {
+      title: "Buy Fruits",
+      assigner: "Marien Bernasor",
+      assignerImage: marien,
+      assignee: "Kyle Atuel",
+      assigneeImage: kyle,
+      date: "22 Mar 2024 8:15am",
+      status: "Completed",
+    },
+    {
+      title: "Fix Computer",
+      assignee: "Neil Clifford Pagara",
+      assigneeImage: kyle,
+      assigner: "Ritzi April Lontoc",
+      assignerImage: marien,
       date: "23 Mar 2024 9:00am",
       status: "In Progress",
+    },{
+      title: "Clean Office",
+      assignee: "Christian Paul Flores",
+      assigneeImage: kyle,
+      assigner: "Lorence Palisan",
+      assignerImage: marien,
+      date: "23 Mar 2024 9:00am",
+      status: "pending",
     },
   ];
   
