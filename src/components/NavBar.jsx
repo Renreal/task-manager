@@ -13,11 +13,11 @@ export default function NavBar() {
         <div className="nav-right">
           <div className="search-bar">
               <img src={searchIcon} alt="Search Icon" className="search-icon" />
-              <input className="nav-search" type="text" placeholder="Search" s/>
+              <input className="nav-search" type="text" placeholder="Search"/>
           </div>
           <img src={bellIcon} alt="Notifications" className="notif-icon" />
           <div className="nav-profile">
-              <img classname="profile-pic" src={kyle} alt="Profile" />
+              <img className="profile-pic" src={kyle} alt="Profile" />
               <span className="profile-name">Kyle</span>
               <img src={dropIcon} alt="dropdown" className="dropdown-icon" />
           </div>
