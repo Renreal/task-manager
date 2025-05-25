@@ -22,8 +22,8 @@
     display: inline-block;
 }
 .admin-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+   flex-direction: column;
     margin: 20px;
 }
 

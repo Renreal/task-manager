@@ -1,6 +1,6 @@
 .recent-tasks-table {
-  margin: 20px;
-  margin-right: 40px;
+  display: flex;
+  margin-top:30px;
 }
 
 .recent-tasks-table img, span{
@@ -37,7 +37,7 @@
 .view-action span{
   font-size: 10px;
   color: rgba(0, 0, 0, 0.7);
-}
+} 
 
 
 .recent-tasks-table .table-body img {
