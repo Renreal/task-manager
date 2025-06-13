@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import {
   Table,
   TableBody,
@@ -7,11 +7,12 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import "../../styles/RecentTasks.css"
+import "../styles/AdminAssignerTasks.css"
 
-export default function RecentTasks({ tableTitle, tasks = [], onViewClick }) {
+
+export default function AdminAssignerTable({ tableTitle, tasks = [], onViewClick }) {
   return (
-    <div className="recent-tasks-table">
+    <div className="admin-footer-table">
       <TableContainer
         className="recent-tasks-table-container"
         sx={{ maxHeight: 300, overflow: "auto" }}
@@ -26,7 +27,7 @@ export default function RecentTasks({ tableTitle, tasks = [], onViewClick }) {
             <TableRow>
               <TableCell
                 colSpan={7}
-                sx={{ borderBottom: "none", padding: "3px" }}
+                sx={{ borderBottom: "none", padding: "" }}
               >
                 <div className="table-title">
                   <span>{tableTitle}</span>
@@ -38,26 +39,19 @@ export default function RecentTasks({ tableTitle, tasks = [], onViewClick }) {
               <TableCell
                 align="left"
                 className="numCell"
-                sx={{ padding: "5px" }}
               >
                 No.
               </TableCell>
-              <TableCell align="left" sx={{ padding: "15px" }}>
-                Task
+              <TableCell align="left">
+                Name
               </TableCell>
-              <TableCell align="left" sx={{ padding: "15px" }}>
-                Assignee
+              <TableCell align="left">
+                Email Address
               </TableCell>
-              <TableCell align="left" sx={{ padding: "15px" }}>
-                Assigner
+              <TableCell align="left">
+                Department
               </TableCell>
-              <TableCell align="left" sx={{ padding: "15px" }}>
-                Date Created
-              </TableCell>
-              <TableCell align="left" sx={{ padding: "15px" }}>
-                Status
-              </TableCell>
-              <TableCell align="left" sx={{ padding: "15px" }}>
+              <TableCell align="left">
                 Action
               </TableCell>
             </TableRow>
@@ -66,31 +60,17 @@ export default function RecentTasks({ tableTitle, tasks = [], onViewClick }) {
           <TableBody className="table-body">
             {tasks.map((task, index) => (
               <TableRow key={task.id || index}>
-                <TableCell component="th" scope="row" sx={{ padding: "5px" }}>
+                <TableCell component="th" scope="row">
                   {index + 1}
                 </TableCell>
                 <TableCell align="left">{task.title}</TableCell>
-
-                <TableCell align="left" className="Assignee">
-                  <img src={task.assigneeImage} alt={task.assignee} />
-                  <span>{task.assignee}</span>
-                </TableCell>
 
                 <TableCell align="left">
                   <img src={task.assignerImage} alt={task.assigner} />
                   <span>{task.assigner}</span>
                 </TableCell>
 
-                <TableCell align="left">{task.date}</TableCell>
-
-                <TableCell
-                  align="left"
-                  className={`status ${task.status
-                    .toLowerCase()
-                    .replace(" ", "-")}`}
-                >
-                  <span>{task.status}</span>
-                </TableCell>
+                <TableCell align="left">{task.department}</TableCell>
 
                 <TableCell align="left" className="view-action">
                   <span onClick={() => onViewClick?.(task)}>View</span>

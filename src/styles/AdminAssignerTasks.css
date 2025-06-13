@@ -1,0 +1,15 @@
+.admin-footer-table {
+  display: flex;
+  margin-top:30px;
+}
+
+.admin-footer-table img, span{
+  vertical-align: middle;
+}
+
+.admin-footer-table .table-body img {
+  width: 24px;
+  border-radius: 18px;
+  margin-right: 6px;
+}
+

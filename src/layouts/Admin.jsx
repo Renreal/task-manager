@@ -7,6 +7,7 @@ import pendingIcon from "../assets/pending-icon.svg";
 import progressIcon from "../assets/progress-icon.svg";
 import completedIcon from "../assets/completed-icon.svg";
 import RecentTasksTable from "../components/RecentTasksTable";
+import AdminAssignerTasks from "../components/templates/AdminAssignerTasks";
 
 export default function Admin() {
   return (
@@ -17,7 +18,7 @@ export default function Admin() {
           <NavBar />
           <div className="admin-dashboard">
             <span id="dashboard-text">Dashboard</span>
-            <div className="admin-content">
+            <div className="admin-content" style={{ border: "1px solid red" }}>
               <div className="admin-header">
                 <TaskCard
                   number={11}
@@ -38,9 +39,13 @@ export default function Admin() {
                   bgColor="#64DA6940"
                 />
               </div>
+              <div className="admin-body">
+                <RecentTasksTable />
+              </div>
+              <div className="admin-footer">
+                <AdminAssignerTasks></AdminAssignerTasks>
+              </div>
             </div>
-
-            <RecentTasksTable/>
           </div>
         </div>
       </div>
